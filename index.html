@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+   <!-- ICONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Youtube - Replicando Layout</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-title">
+            <button type="button" aria-label="Voltar">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <h1>Channel name</h1>
+
+        </div>
+        
+
+        <div class="header-actions">
+          <button type="button" aria-label="Transmitir">
+            <i class="material-symbols-outlined">cast</i>
+          </button>
+          <button type="button" aria-label="Pesquisar">
+            <i class="bi bi-search"></i>
+          </button>
+          <button type="button" aria-label="Mais opções">
+            <i class="bi bi-three-dots-vertical"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="imagens/vingadores.jpeg" alt="Banner do canal" />
+      </section>
+
+      <section class="perfil-info">
+        <img
+          src="imagens/foto.jpg"
+          alt="Foto de perfil de Channel Name"
+          class="avatar-grande"
+        />
+
+        <div class="perfil-textos">
+          <h2>Channel name</h2>
+          <div class="perfil-p">
+            <p>
+              Eleifend adipiscing quisque pellentesque lacus pellentesque
+              aliquet lacus...
+            </p>
+            <button type="button" aria-label="Ver descrição completa">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+          <button type="button" class="btn-subscribe">Subscribe</button>
+        </div>
+      </section>
+
+      <nav class="nav-interna">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">VIDEOS</a></li>
+          <li><a href="#">SHORTS</a></li>
+          <li><a href="#">LIVE</a></li>
+          <li><a href="#">PLAYLISTS</a></li>
+        </ul>
+      </nav>
+
+      <section class="video-feed">
+        <article class="box-video">
+          <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+          <div class="video-details">
+            <img class="perfil-canal-miniatura" src="imagens/foto.jpg" alt="" />
+            <div class="video-text">
+              <h3>Video title</h3>
+              <p>Channel name • 228K views • 3 weeks ago</p>
+            </div>
+            <button type="button" aria-label="Opções do vídeo">
+              <i class="bi bi-three-dots-vertical"></i>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      
+    </main>
+
+    <footer>
+        <div>
+            <button type="button" class="" aria-label="button home">
+                <i class="material-symbols-outlined">
+                home
+                </i>
+                <p>Home</p>
+            </button>
+
+            <button type="button" class="" aria-label="button Shorts">
+                <i class="material-symbols-outlined">
+                motion_play
+                </i>
+                <p>Shorts</p>
+            </button>
+
+            <button type="button" class="" aria-label="button Criar">
+                <i class="bi bi-plus-circle"></i>
+                
+            </button>
+
+            <button type="button" class="" aria-label="button subscribe">
+                <i class="bi bi-collection-play-fill"></i>
+                <p>Subscriptions</p>
+            </button>
+
+            <button type="button" class="" aria-label="buttom home">
+                <i class="material-symbols-outlined">
+                video_library
+                </i>
+                <p>Libary</p>
+            </button>
+
+
+
+            
+        </div>
+      </footer>
+
+  </body>
+</html>
