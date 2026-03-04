@@ -115,13 +115,14 @@ h1 {
 }
 
 .perfil-info {
+  padding: 10px;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
   column-gap: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  row-gap: 12px;
+  gap: 12px;
   
 
   grid-template-areas: 
@@ -210,23 +211,17 @@ h1 {
   position: fixed;
   border-top: 1px solid #272727;
   z-index: 100;
-}
-
-.footer-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 3px;
   color: var(--text-white);
- 
-
 }
+
+
 
 .btn-footer-box {
   display: flex;
   justify-content: space-around;
   gap: 16px; 
-  
+  align-items: center;
   color: var(--text-white);
   line-height: 0;
   height: 56px;
@@ -234,14 +229,128 @@ h1 {
 }
 
 .botoes-f{
-  font-size: 1.2rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6rem; 
+}
+
+.botoes-f i, 
+.botoes-f .material-symbols-outlined {
+    font-size: 1.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;  
+    height: 24px; 
 }
 
 .btn-footer-box p {
   color: var(--text-white);
+  margin: 0;
   
 }
 
 .btn-plus {
-  font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+
+.material-symbols-outlined {
+  /* Ajusta a espessura do traço (wght) para combinar com o Bootstrap */
+  font-variation-settings: 'wght' 300; 
+}
+
+.video-feed{
+  padding: 10px;
+}
+.video-details {
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  
+
+  grid-template-areas: 
+    "foto info opcoes"
+  ;
+
+  gap: 12px;
+
+  align-items: start; /* Alinha pelo topo para o título ficar no lugar certo */
+  padding: 12px 0;
+}
+
+.perfil-canal-miniatura {
+  grid-area: foto;
+}
+
+.video-text {
+  grid-area: info;
+}
+.video-details button {
+  grid-area: opcoes;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Proporção padrão de vídeo */
+  object-fit: cover;
+  border-radius: 12px; 
+}
+
+.txt-desktop{
+  display: none;
+}
+
+@media (min-width: 1024px){
+
+  .footer-box {
+    display: none; /* Remove o footer mobile */
+  }
+
+  .txt-mobile {
+    display:none; 
+  }
+
+  .txt-desktop {
+    display: block;
+  }
+
+
+  .perfil-info{
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+
+    
+    grid-template-areas: 
+        "avatar textos botao"
+      ;
+
+    /* Resetando alinhamentos do mobile */
+    justify-items: start; 
+    text-align: left;
+    gap: 24px;
+    padding: 20px 10%;
+    
+  }
+
+  .btn-subscribe{
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 0;
+    align-self: center;
+  }
+  
+  .perfil-info img {
+    margin-top: 0; 
+    width: 160px;  
+    height: 160px;
+  }
+
+  .perfil-p {
+    justify-content: start;
+  }
+
 }
