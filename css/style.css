@@ -5,7 +5,7 @@
 }
 
 :root {
-    --font-main: 'Inter', sans-serif;
+  --font-main: "Inter", sans-serif;
 }
 
 * {
@@ -14,10 +14,7 @@
   box-sizing: border-box;
 }
 
-
-
 body {
-
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +30,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-white);
   font-family: Roboto, inter, sans-serif;
+  padding-bottom: 70px; /* espaço pro footer*/
 }
 
 img {
@@ -44,7 +42,7 @@ button {
   background: none;
   border: none;
   cursor: pointer;
-  font: inherit; 
+  font: inherit;
 }
 
 a {
@@ -57,61 +55,58 @@ ul {
 }
 
 button i {
-    color: var(--text-white);
+  color: var(--text-white);
 }
 
-
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bg-dark);
-    padding: 10px 16px;
-    height: 56px;
-    position: fixed; 
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-dark);
+  padding: 10px 16px;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 16px; 
+  gap: 16px;
   line-height: 0;
 }
 
 .header-actions i {
-   font-size: 1.2rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 h1 {
-   
   font-size: 1.1rem;
   font-weight: 500;
 }
 
 .hero {
-    margin-top: 56px;
-    width: 100%;
-    aspect-ratio: 3 / 1 ;
+  margin-top: 56px;
+  width: 100%;
+  aspect-ratio: 3 / 1;
 }
 
-.hero img{
-    width: 100%;
-    height: 150px ;
-    
-    object-fit: cover;
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .perfil-info {
@@ -123,15 +118,13 @@ h1 {
   align-items: center;
   text-align: center;
   gap: 12px;
-  
 
-  grid-template-areas: 
+  grid-template-areas:
     "avatar"
     "textos"
-    "botao"
-  ;
+    "botao";
 }
-.perfil-info img{
+.perfil-info img {
   margin-top: -25px;
   width: 50px;
   height: 50px;
@@ -142,8 +135,6 @@ h1 {
 
 .perfil-textos {
   grid-area: textos;
-  
-
 }
 
 .btn-subscribe {
@@ -154,16 +145,14 @@ h1 {
   color: var(--bg-dark);
   width: 100%;
   margin-top: 20px;
-  
 }
 
-.perfil-p button { 
-  grid-area: seta; 
+.perfil-p button {
+  grid-area: seta;
   display: flex;
 }
 
-.perfil-p{
-  grid-area: textos;
+.perfil-p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,28 +163,26 @@ h1 {
   align-items: center;
   gap: 20px;
   padding: 10px 16px;
-  overflow-x: auto; 
+  overflow-x: auto;
   white-space: nowrap;
-  
-
 }
 
-.nav-interna ul::-webkit-scrollbar {  /* remove a barrinha de rolagem da nav */
+.nav-interna ul::-webkit-scrollbar {
+  /* remove a barrinha de rolagem da nav */
   display: none;
 }
 
 .nav-interna li a {
-  font-size: 0.850rem;
+  font-size: 0.85rem;
   font-weight: 600;
   font-size: 0.9rem;
   color: var(--gray-text);
 }
 
-.nav-interna ul li a.active{
+.nav-interna ul li a.active {
   color: var(--text-white);
-  border-bottom:3px solid var(--text-white);;
+  border-bottom: 3px solid var(--text-white);
   padding-bottom: 9px;
-
 }
 .perfil-canal-miniatura {
   width: 50px;
@@ -205,6 +192,7 @@ h1 {
 }
 
 .footer-box {
+  background-color: var(--bg-dark);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -215,66 +203,67 @@ h1 {
   color: var(--text-white);
 }
 
-
-
 .btn-footer-box {
   display: flex;
   justify-content: space-around;
-  gap: 16px; 
+  gap: 16px;
   align-items: center;
   color: var(--text-white);
   line-height: 0;
   height: 56px;
-
 }
 
-.botoes-f{
+.botoes-f {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  font-size: 0.6rem; 
+  font-size: 0.6rem;
 }
 
-.botoes-f i, 
+.botoes-f i,
 .botoes-f .material-symbols-outlined {
-    font-size: 1.5rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;  
-    height: 24px; 
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
 }
 
 .btn-footer-box p {
   color: var(--text-white);
   margin: 0;
-  
 }
 
 .btn-plus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
 }
 
 .material-symbols-outlined {
   /* Ajusta a espessura do traço (wght) para combinar com o Bootstrap */
-  font-variation-settings: 'wght' 300; 
+  font-variation-settings: "wght" 300;
 }
 
-.video-feed{
+.video-feed {
   padding: 10px;
 }
-.video-details {
-  display:grid;
-  grid-template-columns: auto 1fr auto;
-  
+.video-feed {
+  display: grid;
+  /* Cria colunas automaticamente com base no espaço disponível */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
 
-  grid-template-areas: 
-    "foto info opcoes"
-  ;
+.video-details {
+  display: grid;
+  grid-template-columns: 36px 1fr 24px;
+
+  grid-template-areas: "foto info opcoes";
 
   gap: 12px;
 
@@ -293,64 +282,279 @@ h1 {
   grid-area: opcoes;
 }
 
+.box-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .thumbnail {
   width: 100%;
   aspect-ratio: 16 / 9; /* Proporção padrão de vídeo */
   object-fit: cover;
-  border-radius: 12px; 
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
 
-.txt-desktop{
+.txt-desktop {
   display: none;
 }
 
-@media (min-width: 1024px){
+.header-search {
+  display: none;
+}
+.desktop-only {
+  display: none;
+}
+.sidebar-desktop{
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0; /* Remove o espaço extra no desktop */
+  }
+
+  .hero {
+    margin-top: 56px;
+    width: 100%;
+    aspect-ratio: 16 / 2.5; 
+    max-height: 200px; /* para não crescer infinitamente */
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+  }
+
+  
+
+  .feed {
+  
+    padding: 0 5% 40px 5%; /* Adiciona margens laterais flexíveis (5%) */
+    transition: margin-left 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os blocos internos se necessário */
+  }
+
+  .header-search {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 0 1 720px;
+  }
+
+  .header-search form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #303030;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #121212;
+  }
+
+  .header-search input {
+    background-color: transparent;
+    color: var(--text-white);
+    border: none;
+    padding: 0 16px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+  }
+  .header-search form button {
+    background-color: #222222;
+    width: 64px;
+    border-left: 1px solid #303030;
+  }
+
+  /* Escondemos o ícone de pesquisa solto que era do mobile */
+  .header-actions .bi-search {
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex !important; /* Mostra câmera, sino e grade */
+    align-items: center;
+  }
 
   .footer-box {
     display: none; /* Remove o footer mobile */
   }
 
+  .header-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+
+  .header-actions {
+    gap: 20px;
+  }
+
   .txt-mobile {
-    display:none; 
+    display: none;
   }
 
   .txt-desktop {
     display: block;
   }
 
+  /*Sidebar Desktop*/
 
-  .perfil-info{
-    display:grid;
-    grid-template-columns: auto 1fr auto;
+  .menu-toggle {
+    display: flex !important;
+    font-size: 1.5rem;
+  }
+  .sidebar-desktop{
+    display: block;
+    position:fixed;
+    top: 56px;
+    left: 0;
+    width: 72px; /* Largura apenas para os ícones */
+    height: calc(100vh - 56px);
+    background-color: var(--bg-dark);
+   
+    transition: width 0.3s; /* transição  suave no JS */
+    
+  }
+  /* 2. Estilo do Link no Estado Encolhido (Ícone em cima, texto embaixo) */
+  .sidebar-desktop ul li a {
+    display: flex;
+    flex-direction: column; /* Faz o texto ficar embaixo do ícone */
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    width: 100%;
+    color: var(--text-white);
+    gap: 6px;
+  }
+
+  .sidebar-desktop ul li a i {
+    font-size: 1.5rem; /* Ícone maior */
+  }
+
+
+
+  /* TEXTOS NO ESTADO ENCOLHIDO */
+  .sidebar-desktop ul li a span {
+    display: block; 
+    font-size: 0.65rem;
+    text-align: center;
+  }
+  .sidebar-desktop h3, 
+  .sidebar-desktop hr {
+     display: none;
+
+  }
 
     
-    grid-template-areas: 
-        "avatar textos botao"
-      ;
+
+/* ESTADO EXPANDIDO (Ativado por classe no body ou sidebar) */
+    body.sidebar-expanded .sidebar-desktop {
+        width: 240px; /* Largura total */
+        overflow-y: auto; /* Permite rolar se tiver muitas inscrições */
+    }
+
+    body.sidebar-expanded .sidebar-desktop ul li a {
+      flex-direction: row; /* Volta a ficar um ao lado do outro */
+      justify-content: start;
+      padding: 12px 24px;
+      gap: 24px;
+    }
+
+    body.sidebar-expanded .sidebar-desktop ul li a span {
+      font-size: 0.9rem; /* Texto volta ao tamanho normal */
+    }
+
+    body.sidebar-expanded .sidebar-desktop h3, 
+    body.sidebar-expanded .sidebar-desktop hr {
+      display: block;
+      margin: 12px 24px;
+    }
+
+    /* EMPURRAR O CONTEÚDO (MUDANÇA DINÂMICA) */
+    main {
+        margin-left: 72px; /* Espaço padrão encolhido */
+        transition: margin-left 0.3s;
+    }
+
+    body.sidebar-expanded main {
+        margin-left: 240px; /* Espaço total expandido */
+    }
+
+
+
+
+  .perfil-info {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    grid-template-areas: "avatar textos botao";
 
     /* Resetando alinhamentos do mobile */
-    justify-items: start; 
+    justify-items: start;
     text-align: left;
     gap: 24px;
     padding: 20px 10%;
-    
   }
 
-  .btn-subscribe{
+  .btn-subscribe {
+    grid-area: botao;
     width: auto;
     padding: 10px 20px;
     margin-top: 0;
     align-self: center;
   }
-  
+
   .perfil-info img {
-    margin-top: 0; 
-    width: 160px;  
+    grid-area: avatar;
+    margin-top: 0;
+    width: 160px;
     height: 160px;
   }
 
   .perfil-p {
     justify-content: start;
+  }
+
+  .perfil-textos {
+    grid-area: textos;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os textos à esquerda */
+    justify-content: center;
+  }
+
+  .video-feed {
+    width: 100%;
+    max-width: 1280px; /* Evita que os vídeos fiquem gigantes em telas maiores*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 24px 0; /* Espaçamento superior e inferior */
+  }
+
+  .video-text h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+  
+  .video-text p {
+    font-size: 0.9rem;
   }
 
 }
