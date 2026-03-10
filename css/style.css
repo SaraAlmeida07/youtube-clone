@@ -19,6 +19,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 body {
   font-family: var(--font-main);
   /* suavização da fonte*/
@@ -30,7 +31,8 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-white);
   font-family: Roboto, inter, sans-serif;
-  padding-bottom: 70px; /* espaço pro footer*/
+  padding-bottom: 70px;
+  /* espaço pro footer*/
 }
 
 img {
@@ -77,10 +79,10 @@ button i {
   gap: 10px;
 }
 
- .bi-youtube {
-    margin-left: 20px;
-    color: red;
-  }
+.bi-youtube {
+  margin-left: 20px;
+  color: red;
+}
 
 .header-actions {
   display: flex;
@@ -129,6 +131,7 @@ h1 {
     "textos"
     "botao";
 }
+
 .perfil-info img {
   margin-top: -25px;
   width: 50px;
@@ -163,6 +166,7 @@ h1 {
   justify-content: center;
   gap: 8px;
 }
+
 .nav-interna ul {
   display: flex;
   align-items: center;
@@ -189,6 +193,7 @@ h1 {
   border-bottom: 3px solid var(--text-white);
   padding-bottom: 9px;
 }
+
 .perfil-canal-miniatura {
   width: 50px;
   height: 50px;
@@ -256,12 +261,13 @@ h1 {
 .video-feed {
   padding: 16px;
 }
+
 .video-feed {
   display: grid;
   /* Cria colunas automaticamente com base no espaço disponível */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
- 
+
 }
 
 .video-details {
@@ -272,7 +278,8 @@ h1 {
 
   gap: 12px;
 
-  align-items: start; /* Alinha pelo topo para o título ficar no lugar certo */
+  align-items: start;
+  /* Alinha pelo topo para o título ficar no lugar certo */
   padding: 12px 0;
 }
 
@@ -283,6 +290,7 @@ h1 {
 .video-text {
   grid-area: info;
 }
+
 .video-details button {
   grid-area: opcoes;
 }
@@ -295,7 +303,8 @@ h1 {
 
 .thumbnail {
   width: 100%;
-  aspect-ratio: 16 / 9; /* Proporção padrão de vídeo */
+  aspect-ratio: 16 / 9;
+  /* Proporção padrão de vídeo */
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
@@ -303,20 +312,23 @@ h1 {
 
 .channel-section {
   width: 100%;
-  margin-bottom: 24px; 
-  padding: 16px;
+  margin-bottom: 24px;
 }
+
 .section-header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: flex-start;
   align-items: center;
-  padding: 0 16px; /* Respiro para não colar na borda do celular */
+  gap: 15px;
+  padding: 0;
+  /* Respiro para não colar na borda do celular */
   margin-bottom: 12px;
 }
+
 .video-grid {
   display: flex;
   flex-direction: column;
-  gap: 8px; 
+  gap: 8px;
 }
 
 .txt-desktop {
@@ -326,66 +338,79 @@ h1 {
 .header-search {
   display: none;
 }
+
 .desktop-only {
   display: none;
 }
-.sidebar-desktop{
+
+.sidebar-desktop {
   display: none;
 }
 
 /*Modal dos 3 pontinhos*/
-.pontinhos-aberto{
+.pontinhos-aberto {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color:rgba(0,0,0,0.5) ;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   height: 100vh;
   justify-content: flex-end;
   display: none;
 }
-.pontinhos-content{
-  display:flex;
+
+.pontinhos-content {
+  display: flex;
   flex-direction: column;
   background-color: var(--bg-dark);
   border-radius: 15px;
   padding: 10px;
-  margin: 10px; /* Isso cria o respiro em todos os lados (amarelo na sua imagem) */
+  margin: 10px;
+  /* Isso cria o respiro em todos os lados (amarelo na sua imagem) */
   width: auto;
-  
+  flex-shrink: 0;
+  /*para não esticar além da margem */
+
 }
-.pontinhos-item{
-  padding: 15px ;
-  gap:16px;
+
+.pontinhos-item {
+  padding: 10px;
+  gap: 10px;
   display: flex;
   align-items: center;
   color: var(--text-white);
   text-align: left;
+  font-size: 1.3rem;
 }
+
 .modal-handle {
   width: 40px;
   height: 4px;
-  background-color: #555; 
+  background-color: #555;
   border-radius: 10px;
-  align-self: center;    
-  margin-bottom: 15px;   /* Espaço entre ela e o primeiro botão */
+  align-self: center;
+  margin-bottom: 15px;
+  /* Espaço entre ela e o primeiro botão */
   margin-top: 5px;
 }
+
 .pontinhos-aberto.active {
-  display: flex; /* Mostra o modal quando tiver a classe 'active' */
+  display: flex;
+  /* Mostra o modal quando tiver a classe 'active' */
 }
 
 
 
 @media (min-width: 1024px) {
   body {
-    padding-bottom: 0; /* Remove o espaço extra no desktop */
+    padding-bottom: 0;
+    /* Remove o espaço extra no desktop */
   }
 
-  
+
 
   .header-search {
     display: flex;
@@ -412,6 +437,7 @@ h1 {
     height: 40px;
     outline: none;
   }
+
   .header-search form button {
     background-color: #222222;
     width: 64px;
@@ -443,8 +469,9 @@ h1 {
   .hero {
     margin-top: 56px;
     width: 100%;
-    aspect-ratio: 16 / 2.5; 
-    max-height: 200px; /* para não crescer infinitamente */
+    aspect-ratio: 16 / 2.5;
+    max-height: 200px;
+    /* para não crescer infinitamente */
     overflow: hidden;
   }
 
@@ -452,20 +479,22 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; 
+    object-position: center;
     border-radius: 40px;
   }
 
   .desktop-only {
-    display: flex !important; /* Mostra câmera, sino e grade */
+    display: flex !important;
+    /* Mostra câmera, sino e grade */
     align-items: center;
   }
 
   .footer-box {
-    display: none; /* Remove o footer mobile */
+    display: none;
+    /* Remove o footer mobile */
   }
 
-  
+
 
   .txt-mobile {
     display: none;
@@ -481,22 +510,27 @@ h1 {
     display: flex !important;
     font-size: 1.5rem;
   }
-  .sidebar-desktop{
+
+  .sidebar-desktop {
     display: block;
-    position:fixed;
+    position: fixed;
     top: 56px;
     left: 0;
-    width: 72px; /* Largura apenas para os ícones */
+    width: 72px;
+    /* Largura apenas para os ícones */
     height: calc(100vh - 56px);
     background-color: var(--bg-dark);
-   
-    transition: width 0.3s; /* transição  suave no JS */
-    
+
+    transition: width 0.3s;
+    /* transição  suave no JS */
+
   }
+
   /* 2. Estilo do Link no Estado Encolhido (Ícone em cima, texto embaixo) */
   .sidebar-desktop ul li a {
     display: flex;
-    flex-direction: column; /* Faz o texto ficar embaixo do ícone */
+    flex-direction: column;
+    /* Faz o texto ficar embaixo do ícone */
     align-items: center;
     justify-content: center;
     padding: 16px 0;
@@ -506,78 +540,89 @@ h1 {
   }
 
   .sidebar-desktop ul li a i {
-    font-size: 1.5rem; /* Ícone maior */
+    font-size: 1.5rem;
+    /* Ícone maior */
   }
 
 
 
   /* TEXTOS NO ESTADO ENCOLHIDO */
   .sidebar-desktop ul li a span {
-    display: block; 
+    display: block;
     font-size: 0.65rem;
     text-align: center;
   }
-  .sidebar-desktop h3, 
+
+  .sidebar-desktop h3,
   .sidebar-desktop hr {
-     display: none;
+    display: none;
 
   }
 
-    
 
-/* ESTADO EXPANDIDO (Ativado por classe no body ou sidebar) */
-    body.sidebar-expanded .sidebar-desktop {
-        width: 240px; /* Largura total */
-        overflow-y: auto; /* Permite rolar se tiver muitas inscrições */
-    }
 
-    body.sidebar-expanded .sidebar-desktop ul li a {
-      flex-direction: row; /* Volta a ficar um ao lado do outro */
-      justify-content: start;
-      padding: 12px 24px;
-      gap: 24px;
-    }
+  /* ESTADO EXPANDIDO (Ativado por classe no body ou sidebar) */
+  body.sidebar-expanded .sidebar-desktop {
+    width: 240px;
+    /* Largura total */
+    overflow-y: auto;
+    /* Permite rolar se tiver muitas inscrições */
+  }
 
-    body.sidebar-expanded .sidebar-desktop ul li a span {
-      font-size: 0.9rem; /* Texto volta ao tamanho normal */
-    }
+  body.sidebar-expanded .sidebar-desktop ul li a {
+    flex-direction: row;
+    /* Volta a ficar um ao lado do outro */
+    justify-content: start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
 
-    body.sidebar-expanded .sidebar-desktop h3, 
-    body.sidebar-expanded .sidebar-desktop hr {
-      display: block;
-      margin: 12px 24px;
-    }
+  body.sidebar-expanded .sidebar-desktop ul li a span {
+    font-size: 0.9rem;
+    /* Texto volta ao tamanho normal */
+  }
 
-    /* EMPURRAR O CONTEÚDO (MUDANÇA DINÂMICA) */
-    main {
-        margin-left: 72px; /* Espaço padrão encolhido */
-        transition: margin-left 0.3s;
-    }
+  body.sidebar-expanded .sidebar-desktop h3,
+  body.sidebar-expanded .sidebar-desktop hr {
+    display: block;
+    margin: 12px 24px;
+  }
 
-    body.sidebar-expanded main {
-        margin-left: 240px; /* Espaço total expandido */
-    }
+  /* EMPURRAR O CONTEÚDO (MUDANÇA DINÂMICA) */
+  main {
+    margin-left: 72px;
+    /* Espaço padrão encolhido */
+    transition: margin-left 0.3s;
+  }
 
-    .nav-interna{
-      width: 100%;
-    }
+  body.sidebar-expanded main {
+    margin-left: 240px;
+    /* Espaço total expandido */
+  }
 
-    main {
-  
-    padding: 0 5% 40px 5%; /* Adiciona margens laterais flexíveis (5%) */
+  .nav-interna {
+    width: 100%;
+  }
+
+  main {
+
+    padding: 0 5% 40px 5%;
+    /* Adiciona margens laterais flexíveis (5%) */
     transition: margin-left 0.3s;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os blocos internos se necessário */
+    align-items: center;
+    /* Centraliza os blocos internos se necessário */
   }
 
   .feed {
     width: 100%;
-    max-width: 1284px; 
-    margin: 0 auto;    
+    max-width: 1284px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 0 16px;   /* Respiro lateral interno */
+    padding: 0 16px;
+    /* Respiro lateral interno */
   }
 
 
@@ -593,14 +638,14 @@ h1 {
     justify-items: start;
     text-align: left;
     gap: 24px;
-    
+
 
     width: 100%;
-    gap:24px;
-    padding: 32px 0 ;
+    gap: 24px;
+    padding: 32px 0;
     align-items: center;
     text-align: left;
-  
+
   }
 
   .btn-subscribe {
@@ -626,20 +671,21 @@ h1 {
     grid-area: textos;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha os textos à esquerda */
+    align-items: flex-start;
+    /* Alinha os textos à esquerda */
     justify-content: center;
   }
 
   /* Container Do Video destaque  */
   .featured-video-container {
     width: 100%;
-    padding: 24px 0 ;
+    padding: 24px 0;
   }
 
   .featured-video {
     display: grid;
     grid-template-columns: 246px 1fr;
-    gap:16px;
+    gap: 16px;
     align-items: start;
 
   }
@@ -686,7 +732,8 @@ h1 {
 
   .featured-link {
     font-size: 0.85rem;
-    color: #3ea6ff; /* Azul clássico de links do YouTube */
+    color: #3ea6ff;
+    /* Azul clássico de links do YouTube */
   }
 
   .section-divider {
@@ -697,11 +744,13 @@ h1 {
 
   .video-feed {
     width: 100%;
-    max-width: 1280px; /* Evita que os vídeos fiquem gigantes em telas maiores*/
+    max-width: 1280px;
+    /* Evita que os vídeos fiquem gigantes em telas maiores*/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
-    padding: 24px 0; /* Espaçamento superior e inferior */
+    padding: 24px 0;
+    /* Espaçamento superior e inferior */
   }
 
   .video-text h4 {
@@ -709,41 +758,65 @@ h1 {
     line-height: 1.4;
     margin-bottom: 4px;
   }
-  
+
   .video-text p {
     font-size: 0.9rem;
   }
 
   .channel-section {
     width: 100%;
-    margin-bottom: 40px; /* Espaço entre as seções */
+    margin-bottom: 40px;
+    /* Espaço entre as seções */
   }
+
+  .channel-section.desktop-only {
+    display: block !important;
+    /* Mudamos de flex para block para manter o fluxo vertical */
+    width: 100%;
+    max-width: 1284px;
+    /* Mesma largura que você definiu para o seu .feed */
+    margin: 0 auto 40px auto;
+    /* Centraliza a seção e dá o respiro de baixo */
+  }
+
 
   .section-header {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 20px;
+    padding-left: 0;
   }
 
   .section-header h3 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    color: var(--text-white);
   }
 
   .play-all {
     display: flex;
     align-items: center;
-    gap: 4px;
-    font-size: 0.9rem;
+    gap: 6px;
+    font-size: 0.85rem;
     color: var(--gray-text);
-    font-weight: 500;
+    /* Cor cinza discreta igual ao original */
+    background: none;
+    padding: 4px 8px;
+    border-radius: 18px;
+    transition: background 0.2s;
   }
 
- 
+  .play-all:hover {
+    background-color: #272727;
+    /* Efeito de hover do YouTube */
+  }
+
+
   .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); /* Um pouco menores para caberem mais */
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    /* Um pouco menores para caberem mais */
     gap: 16px;
   }
 

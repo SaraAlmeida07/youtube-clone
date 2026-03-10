@@ -58,6 +58,7 @@
         </button>
       </div>
 
+      <!--Header-Actions-->
       <div class="header-actions">
         <button type="button" class="mobile-only" aria-label="Transmitir">
           <i class="material-symbols-outlined">cast</i>
@@ -65,7 +66,7 @@
         <button type="button" class="mobile-only" aria-label="Pesquisar">
           <i class="bi bi-search"></i>
         </button>
-        <button type="button" class="mobile-only" aria-label="Mais opções">
+        <button type="button" id="abrir-mdp" class="mobile-only" aria-label="Mais opções">
           <i class="bi bi-three-dots-vertical"></i>
         </button>
 
@@ -93,14 +94,7 @@
         <li><a href="#"><i class="bi bi-collection-play"></i> <span>Subscriptions</span></a></li>
         <li><a href="#"><i class="material-symbols-outlined"> video_library </i> <span>Library</span> </a></li>
       </ul>
-      <hr>
 
-      <!--<div class="sidebar-section subscriptions">
-          <h3 class="sidebar-title">Subscriptions</h3>
-          <ul>
-            <li><a href="#"><img src="imagens/avatar.jpeg" alt=""> <span>Channel 1</span></a></li>
-          </ul>
-        </div>-->
     </nav>
   </aside>
 
@@ -129,7 +123,7 @@
           </div>
         </div>
 
-        <button type="button" class="btn-subscribe">Subscribe</button>
+        <button type="button" id="botao-inscricao" class="btn-subscribe">Subscribe</button>
       </section>
 
       <nav class="nav-interna">
@@ -167,194 +161,176 @@
         <hr class="section-divider">
       </section>
 
+
       <section class="channel-section desktop-only">
         <div class="section-header">
           <h3>Newest Channel Name Videos!</h3>
           <button class="play-all desktop-only"><i class="bi bi-play-fill"></i> Play all</button>
         </div>
-        
+
         <div class="video-grid">
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
-              <h4>Video title</h4>
+                <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
-          
         </div>
       </section>
 
       <section class="channel-section desktop-only">
         <div class="section-header">
           <h3>Most Popular Channel Name Videos</h3>
-          <button class="play-all"><i class="bi bi-play-fill"></i> Play all</button>
+          <button class="play-all desktop-only"><i class="bi bi-play-fill"></i> Play all</button>
         </div>
-        
+
         <div class="video-grid">
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
                 <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
-
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
                 <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
-           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
-            <div class="video-details">
-              <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
-              <div class="video-text">
-                <h4>Video title</h4>
-                <p>Channel name • 228K views • 3 weeks ago</p>
-              </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
-            </div>
-          </article>
-
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
                 <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
-           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
-            <div class="video-details">
-              <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
-              <div class="video-text">
-                <h4>Video title</h4>
-                <p>Channel name • 228K views • 3 weeks ago</p>
-              </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
-            </div>
-          </article>
-
           <article class="box-video">
-            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa do vídeo" />
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
             <div class="video-details">
               <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
               <div class="video-text">
                 <h4>Video title</h4>
                 <p>Channel name • 228K views • 3 weeks ago</p>
               </div>
-              <button type="button" aria-label="Opções do vídeo">
-                <i class="bi bi-three-dots-vertical"></i>
-              </button>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
+            </div>
+          </article>
+          <article class="box-video">
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
+            <div class="video-details">
+              <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
+              <div class="video-text">
+                <h4>Video title</h4>
+                <p>Channel name • 228K views • 3 weeks ago</p>
+              </div>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
+            </div>
+          </article>
+          <article class="box-video">
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
+            <div class="video-details">
+              <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
+              <div class="video-text">
+                <h4>Video title</h4>
+                <p>Channel name • 228K views • 3 weeks ago</p>
+              </div>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
+            </div>
+          </article>
+          <article class="box-video">
+            <img class="thumbnail" src="imagens/foto.jpg" alt="Capa" />
+            <div class="video-details">
+              <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
+              <div class="video-text">
+                <h4>Video title</h4>
+                <p>Channel name • 228K views • 3 weeks ago</p>
+              </div>
+              <button type="button"><i class="bi bi-three-dots-vertical"></i></button>
             </div>
           </article>
         </div>
@@ -366,7 +342,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -380,7 +356,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -394,7 +370,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -408,7 +384,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -422,7 +398,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -436,7 +412,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -450,7 +426,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -464,7 +440,7 @@
           <div class="video-details">
             <img class="perfil-canal-miniatura" src="imagens/avatar.jpeg" alt="" />
             <div class="video-text">
-             <h4>Video title</h4>
+              <h4>Video title</h4>
               <p>Channel name • 228K views • 3 weeks ago</p>
             </div>
             <button type="button" aria-label="Opções do vídeo">
@@ -504,27 +480,28 @@
     </div>
   </footer>
   <!--Modal 3 pontinhos-->
-  <div class="pontinhos-aberto">
-          <div class="pontinhos-content">
-            <span class="modal-handle"></span>
-            <button class="pontinhos-item" id="share">
-              <i class="fa-solid fa-share"></i>
-              <span>Share</span>
-            </button>
-            <button class="pontinhos-item" id="info">
-              <i class="bi bi-info-circle"></i>
-              <span> About channel</span>
-            </button>
-            <button class="pontinhos-item" id="ban">
-              <i class="bi bi-ban"></i>
-              <span> Hide user from my channel</span>
-            </button>
-            <button class="pontinhos-item" id="question">
-              <i class="bi bi-question-circle"></i>
-              <span> Help & feedback</span>
-            </button>
-          </div>
+  <div id="modal-pontinhos" class="pontinhos-aberto">
+    <div class="pontinhos-content">
+      <span class="modal-handle"></span>
+      <button class="pontinhos-item" id="share">
+        <i class="bi bi-share"></i>
+        <span>Share</span>
+      </button>
+      <button class="pontinhos-item" id="info">
+        <i class="bi bi-info-circle"></i>
+        <span> About channel</span>
+      </button>
+      <button class="pontinhos-item" id="ban">
+        <i class="bi bi-ban"></i>
+        <span> Hide user from my channel</span>
+      </button>
+      <button class="pontinhos-item" id="question">
+        <i class="bi bi-question-circle"></i>
+        <span> Help & feedback</span>
+      </button>
     </div>
+  </div>
+  <script src="js/script.js" defer></script>.
 </body>
 
 </html>
