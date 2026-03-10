@@ -254,14 +254,14 @@ h1 {
 }
 
 .video-feed {
-  padding: 10px;
+  padding: 16px;
 }
 .video-feed {
   display: grid;
   /* Cria colunas automaticamente com base no espaço disponível */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
-  padding: 16px;
+ 
 }
 
 .video-details {
@@ -301,6 +301,24 @@ h1 {
   margin-bottom: 12px;
 }
 
+.channel-section {
+  width: 100%;
+  margin-bottom: 24px; 
+  padding: 16px;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 16px; /* Respiro para não colar na borda do celular */
+  margin-bottom: 12px;
+}
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+}
+
 .txt-desktop {
   display: none;
 }
@@ -314,6 +332,8 @@ h1 {
 .sidebar-desktop{
   display: none;
 }
+
+
 
 
 @media (min-width: 1024px) {
@@ -640,7 +660,7 @@ h1 {
     padding: 24px 0; /* Espaçamento superior e inferior */
   }
 
-  .video-text h3 {
+  .video-text h4 {
     font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 4px;
@@ -648,6 +668,39 @@ h1 {
   
   .video-text p {
     font-size: 0.9rem;
+  }
+
+  .channel-section {
+    width: 100%;
+    margin-bottom: 40px; /* Espaço entre as seções */
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .section-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .play-all {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    font-weight: 500;
+  }
+
+ 
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); /* Um pouco menores para caberem mais */
+    gap: 16px;
   }
 
 }
