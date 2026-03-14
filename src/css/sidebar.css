@@ -1,0 +1,193 @@
+/* =========================
+   Sidebar base
+========================= */
+
+.sidebar-desktop {
+  display: none;
+}
+
+
+/* =========================
+   Estrutura da sidebar
+========================= */
+
+.sidebar-desktop {
+  width: 72px;
+  height: calc(100vh - 56px);
+  position: fixed;
+  top: 56px;
+  left: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background-color: var(--bg-dark);
+  transition: width 0.3s ease;
+}
+
+
+/* =========================
+   Links da sidebar
+========================= */
+
+.sidebar-desktop ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  gap: 4px;
+}
+
+.sidebar-desktop ul li a i,
+.sidebar-desktop ul li a .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+
+/* =========================
+   Texto no modo compacto
+========================= */
+
+.sidebar-desktop ul li a span {
+  font-size: 0.65rem;
+}
+
+
+/* =========================
+   Hover
+========================= */
+
+.sidebar-desktop ul li a:hover {
+  background-color: #272727;
+  border-radius: 10px;
+}
+
+
+/* =========================
+   Sidebar expandida
+========================= */
+
+body.sidebar-expanded .sidebar-desktop {
+  width: 240px;
+}
+
+body.sidebar-expanded .sidebar-desktop ul li a {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px;
+  height: 40px;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+body.sidebar-expanded .sidebar-desktop ul li a span {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+body.sidebar-expanded main {
+  margin-left: 240px;
+}
+
+
+/* =========================
+   Controle de visibilidade
+========================= */
+
+.sidebar-title,
+.sidebar-desktop hr {
+  display: none;
+}
+
+body.sidebar-expanded .sidebar-title,
+body.sidebar-expanded .sidebar-desktop hr {
+  display: block;
+}
+
+body:not(.sidebar-expanded) .sidebar-title,
+body:not(.sidebar-expanded) .sidebar-desktop hr {
+  display: none;
+}
+
+body:not(.sidebar-expanded) .sidebar-section:not(:first-child) {
+  display: none;
+}
+
+.sidebar-expanded .icon-inscricao {
+  display: none;
+}
+
+
+/* =========================
+   Títulos das seções
+========================= */
+
+.sidebar-title {
+  color: var(--text-white);
+  font-size: 0.9rem;
+  padding: 12px 24px 8px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Avatares dos canais
+========================= */
+
+.side-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* =========================
+   Divisores
+========================= */
+
+.sidebar-desktop hr {
+  border: none;
+  border-top: 1px solid #303030;
+  margin: 12px 0;
+}
+
+
+/* =========================
+   Scroll personalizado
+========================= */
+
+.sidebar-desktop::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-desktop::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-desktop::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.sidebar-desktop:hover::-webkit-scrollbar-thumb {
+  background-color: #717171;
+  border: 2px solid var(--bg-dark);
+}
+
+.sidebar-desktop::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+
+/* =========================
+   Indicador de live
+========================= */
+
+.live-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  margin-left: auto;
+}

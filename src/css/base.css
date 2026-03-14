@@ -1,0 +1,101 @@
+/* =========================
+   Variáveis globais
+========================= */
+
+:root {
+  --bg-dark: #0f0f0f;
+  --text-white: #ffffff;
+  --gray-text: #aaaaaa;
+  --font-main: "Inter", sans-serif;
+}
+
+
+/* =========================
+   Reset global
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   Body / tipografia
+========================= */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+
+  font-family: Roboto, var(--font-main), sans-serif;
+
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+
+  /* suavização de fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* espaço para footer mobile */
+  padding-bottom: 70px;
+}
+
+
+/* =========================
+   Elementos base
+========================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+button i {
+  color: var(--text-white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+/* =========================
+   Barra de rolagem global
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #717171;
+  border: 2px solid var(--bg-dark);
+}
