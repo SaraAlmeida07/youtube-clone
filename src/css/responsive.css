@@ -10,7 +10,7 @@
     transition: margin-left 0.3s;
     display: flex;
     flex-direction: column;
-    align-items: stretch
+    align-items: stretch;
   }
 
   .header-search {
@@ -241,6 +241,7 @@
 
   .section-header {
     display: flex;
+    left:0;
     align-items: center;
     gap: 16px;
     margin-bottom: 20px;
@@ -250,6 +251,13 @@
   .section-header h3 {
     font-size: 1.25rem;
     font-weight: 600;
+    margin: 0;
+  }
+
+  .channel-section.desktop-only {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .play-all {
